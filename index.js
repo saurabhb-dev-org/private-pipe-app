@@ -3,7 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.send(process.env.database_password);
+    res.send(process.env.postgres_password);
 });
 
 app.listen(PORT, () => {
