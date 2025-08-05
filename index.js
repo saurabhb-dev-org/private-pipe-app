@@ -3,7 +3,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.send('Hello, pipeline !!!!!!!!');
+    console.log(process.env);
+    res.send(process.env.GITHUB_PAT);
 });
 
 app.listen(PORT, () => {
